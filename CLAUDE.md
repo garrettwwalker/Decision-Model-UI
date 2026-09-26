@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-**Daybreak** is a static design preview (no backend, no build step, no tests) for a decision-intelligence portal that predicts geopolitical events for clients in the maritime supply chain. The tagline is "Get up at daybreak, before the world does."
+**Daybreak** is a static design preview (no backend, no build step, no tests) for a decision-intelligence portal that predicts geopolitical events for clients in the maritime supply chain. The tagline is "Wake up to risk before the world does".
 
 - `index.html` is the marketing/landing page. Its sections are `#platform`, `#predictions`, `#maritime` and `#request-access`.
 - `executive.html`, `analyst.html` and `workbench.html` are the three insight tiers ("Executive Brief", "Analyst Console", "Quant Workbench"). They share a console shell, and a tier-switcher links them to each other.
