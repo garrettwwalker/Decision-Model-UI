@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quant Workbench — Daybreak</title>
+<meta name="description" content="Tune model coefficients, integrate proprietary data, and explore the universe of possible decisions." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23F5A83C'/%3E%3Cstop offset='1' stop-color='%23D9486B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='16' fill='url(%23g)'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+        <defs><linearGradient id="navGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#F5A83C"/><stop offset="1" stop-color="#D9486B"/>
+        </linearGradient></defs>
+        <circle cx="16" cy="16" r="16" fill="url(#navGrad)"/>
+      </svg>
+      <span>Daybreak<small>Decision Intelligence</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#platform">Platform</a>
+      <a href="index.html#predictions">Predictions</a>
+      <a href="index.html#maritime">Maritime Focus</a>
+    </div>
+    <div class="nav-actions">
+      <a href="index.html" class="btn btn-outline btn-sm">← Back to Home</a>
+    </div>
+  </div>
+</nav>
+
+<div class="console-header">
+  <div class="wrap">
+    <div class="console-eyebrow-row">
+      <div class="tier-switch">
+        <a href="executive.html">Executive Brief</a>
+        <a href="analyst.html">Analyst Console</a>
+        <a href="workbench.html" class="active">Quant Workbench</a>
+      </div>
+      <span class="sample-flag">🌅 Sample scenario — illustrative data</span>
+    </div>
+    <div class="console-title">
+      <div>
+        <span class="eyebrow">Quant Workbench</span>
+        <h1>Tune the model. Explore the decision space.</h1>
+        <p>Adjust the coefficients behind a live prediction, wire in proprietary fleet data, and see how the universe of available decisions shifts in response.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:28px;">
+  <div class="workbench-toolbar">
+    <div class="select-fake">
+      Model: Strait of Hormuz Disruption v2.3
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="select-fake">
+      Scenario: Base Case
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div style="flex:1;"></div>
+    <button class="btn btn-outline btn-sm">Save as Scenario</button>
+    <button class="btn btn-dark btn-sm">Export Decision Matrix</button>
+  </div>
+</div>
+
+<div class="wrap workbench-grid">
+
+  <div>
+    <div class="panel">
+      <div class="panel-head">
+        <h3>Model Coefficients</h3>
+        <span class="meta">4 active</span>
+      </div>
+
+      <div class="coeff">
+        <div class="coeff-top"><label>Naval incident frequency</label><span class="coeff-val">62</span></div>
+        <p class="coeff-desc">Weighted count of intercepts, seizures, and near-miss incidents in the strait, trailing 14 days.</p>
+        <input type="range" min="0" max="100" value="62" data-coeff data-weight="1.4" />
+      </div>
+
+      <div class="coeff">
+        <div class="coeff-top"><label>War-risk insurance premium delta</label><span class="coeff-val">48</span></div>
+        <p class="coeff-desc">Rate of change in war-risk quotes for Gulf transits, normalized against a 90-day baseline.</p>
+        <input type="range" min="0" max="100" value="48" data-coeff data-weight="1.1" />
+      </div>
+
+      <div class="coeff">
+        <div class="coeff-top"><label>Diplomatic backchannel signal</label><span class="coeff-val">30</span></div>
+        <p class="coeff-desc">Inverse indicator — higher values mean weaker back-channel de-escalation activity detected.</p>
+        <input type="range" min="0" max="100" value="30" data-coeff data-weight="0.9" />
+      </div>
+
+      <div class="coeff">
+        <div class="coeff-top"><label>Carrier group presence</label><span class="coeff-val">55</span></div>
+        <p class="coeff-desc">U.S. and allied naval presence in-theater, scaled against historical deployment levels.</p>
+        <input type="range" min="0" max="100" value="55" data-coeff data-weight="0.7" />
+      </div>
+
+      <div class="composite-score">
+        <div class="num" data-composite-score>50</div>
+        <div class="lbl">Composite Disruption Score</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>Proprietary Data</h3></div>
+      <div class="dropzone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+        Connect your AIS feed, charter book, or war-risk insurance quotes
+      </div>
+      <div class="source-row">
+        <span class="source-name"><span class="source-dot on"></span>Fleet AIS Feed</span>
+        <span class="status-txt" style="color:var(--teal);">Connected</span>
+      </div>
+      <div class="source-row">
+        <span class="source-name"><span class="source-dot pending"></span>Charter Rate Book</span>
+        <span class="status-txt" style="color:#B5741A;">Syncing</span>
+      </div>
+      <div class="source-row">
+        <span class="source-name"><span class="source-dot off"></span>War-Risk Insurance Quotes</span>
+        <span class="status-txt">Not connected</span>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="panel">
+      <div class="panel-head">
+        <h3>Universe of Decisions</h3>
+        <span class="meta">Ranked by expected value under current scenario</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="decision-table">
+          <thead>
+            <tr>
+              <th>Decision</th>
+              <th>Est. Impact</th>
+              <th>Est. Cost</th>
+              <th>Time to Execute</th>
+              <th>Confidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="decision-name">Increase war-risk insurance coverage<span>For vessels transiting in next 14 days</span></td>
+              <td><div class="impact-bar"><i style="width:82%"></i></div></td>
+              <td class="pill-num">$$</td>
+              <td>1–2 days</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td class="decision-name">Pre-position Cape route contingency<span>For cargo tolerant of +10–14 day transit</span></td>
+              <td><div class="impact-bar"><i style="width:70%"></i></div></td>
+              <td class="pill-num">$$$</td>
+              <td>3–5 days</td>
+              <td>Medium-High</td>
+            </tr>
+            <tr>
+              <td class="decision-name">Renegotiate near-term charter terms<span>Add war-risk clause to charters maturing this quarter</span></td>
+              <td><div class="impact-bar"><i style="width:58%"></i></div></td>
+              <td class="pill-num">$</td>
+              <td>1 week</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td class="decision-name">Delay non-critical Gulf-bound shipments<span>Hold for 30-day risk window to pass</span></td>
+              <td><div class="impact-bar"><i style="width:41%"></i></div></td>
+              <td class="pill-num">$$</td>
+              <td>Immediate</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td class="decision-name">No action — monitor only<span>Maintain current routing and coverage</span></td>
+              <td><div class="impact-bar"><i style="width:18%"></i></div></td>
+              <td class="pill-num">–</td>
+              <td>–</td>
+              <td>Low</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>Sensitivity Notes</h3></div>
+      <p style="font-size:14px; color:var(--ink-soft);">The composite score is most sensitive to <strong>naval incident frequency</strong> at current weights. A single additional intercept-class event in the next 7 days is estimated to move the composite score by roughly 4–6 points — enough to shift the top-ranked decision from insurance repricing to active rerouting.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-bottom" style="border-top:none; padding-top:0;">
+    <span>© <span data-year></span> Daybreak. Concept skeleton — not a live product.</span>
+    <span class="placeholder-note">🌅 Sample scenario for illustration only</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

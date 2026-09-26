@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Analyst Console — Daybreak</title>
+<meta name="description" content="Ask Daybreak anything about geopolitical risk to your lanes, ports, and routes." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23F5A83C'/%3E%3Cstop offset='1' stop-color='%23D9486B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='16' fill='url(%23g)'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+        <defs><linearGradient id="navGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#F5A83C"/><stop offset="1" stop-color="#D9486B"/>
+        </linearGradient></defs>
+        <circle cx="16" cy="16" r="16" fill="url(#navGrad)"/>
+      </svg>
+      <span>Daybreak<small>Decision Intelligence</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#platform">Platform</a>
+      <a href="index.html#predictions">Predictions</a>
+      <a href="index.html#maritime">Maritime Focus</a>
+    </div>
+    <div class="nav-actions">
+      <a href="index.html" class="btn btn-outline btn-sm">← Back to Home</a>
+    </div>
+  </div>
+</nav>
+
+<div class="console-header">
+  <div class="wrap">
+    <div class="console-eyebrow-row">
+      <div class="tier-switch">
+        <a href="executive.html">Executive Brief</a>
+        <a href="analyst.html" class="active">Analyst Console</a>
+        <a href="workbench.html">Quant Workbench</a>
+      </div>
+      <span class="sample-flag">🌅 Sample conversation — illustrative data</span>
+    </div>
+    <div class="console-title">
+      <div>
+        <span class="eyebrow">Analyst Console</span>
+        <h1>Ask about any lane, port, or scenario.</h1>
+        <p>Answers cite the underlying signals and carry a confidence level — built for the manager who owns the routing decision, not just the risk report.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap analyst-shell">
+
+  <aside class="chat-sidebar">
+    <h5>Recent Threads</h5>
+    <div class="thread-item active">Hormuz charter exposure<span>Today, 8:41 AM</span></div>
+    <div class="thread-item">Red Sea rerouting cost delta<span>Yesterday</span></div>
+    <div class="thread-item">Q3 Black Sea grain outlook<span>Monday</span></div>
+    <div class="thread-item">Panama draft restriction timeline<span>Last week</span></div>
+    <h5 style="margin-top:24px;">Filters</h5>
+    <div class="chip-row">
+      <span class="chip">Persian Gulf</span>
+      <span class="chip">Red Sea</span>
+      <span class="chip">Black Sea</span>
+      <span class="chip">East Asia</span>
+    </div>
+  </aside>
+
+  <div class="chat-main">
+    <div class="chat-scroll" data-chat-scroll>
+
+      <div class="msg user">
+        <div class="msg-avatar">GM</div>
+        <div class="msg-bubble">
+          <p>What's the probability the Strait of Hormuz closes to tanker traffic in the next 30 days, and what should we do about our Gulf-bound charters?</p>
+        </div>
+      </div>
+
+      <div class="msg bot">
+        <div class="msg-avatar">GH</div>
+        <div class="msg-bubble">
+          <p><strong>Daybreak estimates a 41% probability</strong> of a significant disruption to tanker traffic through the Strait of Hormuz in the next 30 days — meaning a partial closure, a mining or seizure incident, or a war-risk designation severe enough to halt insured transits. That's up from 35% a week ago.</p>
+          <p>Three drivers are pushing this higher:</p>
+          <ul>
+            <li>Two additional IRGC fast-boat intercepts logged this week, versus a trailing average of one every ten days.</li>
+            <li>War-risk insurance quotes on Gulf transits have widened for the first time in six weeks.</li>
+            <li>A U.S. carrier group extension was announced, which historically correlates with elevated (not reduced) short-term risk in our model.</li>
+          </ul>
+          <p>For your Gulf-bound charters, we'd suggest reviewing war-risk coverage limits on any vessel scheduled to transit in the next two weeks, and pricing a Cape-route contingency for cargo that can tolerate the extra transit time.</p>
+          <div class="msg-cite">
+            <span>Sources: 14 signals</span>
+            <span>Model confidence: Medium-High</span>
+            <span>Updated 6 min ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="msg user">
+        <div class="msg-avatar">GM</div>
+        <div class="msg-bubble">
+          <p>How does that compare to the Bab-el-Mandeb situation right now?</p>
+        </div>
+      </div>
+
+      <div class="msg bot">
+        <div class="msg-avatar">GH</div>
+        <div class="msg-bubble">
+          <p>Bab-el-Mandeb is a higher-probability, lower-severity-per-incident risk right now: <strong>63% probability</strong> that carriers keep the bulk of Asia-Europe volume on the Cape of Good Hope routing through year-end, versus Hormuz's lower-probability but higher-severity closure risk.</p>
+          <p>In practice: Hormuz risk is about a sudden stop to a critical energy flow; Bab-el-Mandeb risk is already priced into routing and mostly shows up as sustained added cost and transit time rather than a single disruptive event.</p>
+          <div class="msg-cite">
+            <span>Sources: 9 signals</span>
+            <span>Model confidence: High</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="chat-input-row">
+      <div class="chip-row">
+        <span class="chip" data-chip="What's our exposure to a Taiwan Strait contingency this quarter?">Taiwan Strait exposure this quarter?</span>
+        <span class="chip" data-chip="Summarize this week's change in the Global Risk Index.">Summarize this week's Risk Index</span>
+        <span class="chip" data-chip="Which of our lanes are most sensitive to a Panama Canal restriction?">Lanes sensitive to Panama restrictions?</span>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Ask about a route, region, or scenario…" data-chat-input />
+        <button class="chat-send" data-chat-send aria-label="Send">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <aside class="chat-context">
+    <h5>Related Predictions</h5>
+    <div class="related-card">
+      <span class="event-region">Persian Gulf</span>
+      <h4>Strait of Hormuz disruption</h4>
+      <div class="event-metric" style="margin-top:6px;"><span class="num" style="font-size:22px;">41%</span><span class="trend up" style="font-size:11px;">▲6pts</span></div>
+    </div>
+    <div class="related-card">
+      <span class="event-region">Red Sea</span>
+      <h4>Bab-el-Mandeb rerouting</h4>
+      <div class="event-metric" style="margin-top:6px;"><span class="num" style="font-size:22px;">63%</span><span class="trend up" style="font-size:11px;">▲3pts</span></div>
+    </div>
+    <div class="related-card">
+      <span class="event-region">East Asia</span>
+      <h4>Taiwan Strait contingency</h4>
+      <div class="event-metric" style="margin-top:6px;"><span class="num" style="font-size:22px;">17%</span><span class="trend up" style="font-size:11px;">▲2pts</span></div>
+    </div>
+    <a href="index.html#predictions" class="btn btn-ghost btn-block btn-sm" style="margin-top:6px;">View full library</a>
+  </aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-bottom" style="border-top:none; padding-top:0;">
+    <span>© <span data-year></span> Daybreak. Concept skeleton — not a live product.</span>
+    <span class="placeholder-note">🌅 Sample conversation for illustration only</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
